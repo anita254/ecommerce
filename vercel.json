@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "ecomprj/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "ecomprj/wsgi.py"
+        }
+    ]
+}
